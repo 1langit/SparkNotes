@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="img/sparkles.svg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>SparkNotes</title>
+</head>
+<body>
+    <!-- Navigaton -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary">
+        <div class="container px-3">
+            <a href="index.html" class="text-white text-decoration-none fs-4 px-1 pe-4"><ion-icon name="sparkles"></ion-icon>SparkNotes</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+                <div class="navbar-toggler-icon"></div>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav nav nav-underline">
+                    <li class="nav-item px-2">
+                        <a href="html/about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="html/feature.html" class="nav-link">Feature</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="html/community.html" class="nav-link">Community</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="html/account.html#login" class="nav-link">Log in</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="html/account.html#signup" class="nav-link">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cover -->
+    <div class="bg-primary bg-gradient w-100 vh-100 d-flex align-items-center mt-5 pb-5">
+        <div class="container p-5">
+            <div class="row d-flex align-items-center">
+                <div class="col-md">
+                    <h1 class="text-white">Take notes easily</h1>
+                    <h5 class="text-white">The Ultimate Note-Taking App for Productivity</h5>
+                    <br>
+                    <br>
+                    <button class="btn btn-warning w-auto py-2 px-3 py-md-3 px-md-5" type="button" onclick="location.href='html/account.html#signup'">
+                        <h6 class="m-0">Sign up for free</h6>
+                    </button>
+                </div>
+                <div class="col-md mt-5">
+                    <img src="img/Notes-amico.png" class="img-fluid w-75 float-end">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+
+        <!-- Section 1 -->
+        <div class="row mt-5">
+            <div class="col-sm-4">
+                <img src="img/Add notes-pana.png" class="img-fluid">
+            </div>
+            <div class="col-sm-8 col-xxl-7 align-middle d-flex flex-column justify-content-center px-xl-5 m-xxl-5">
+                <h2>Capture, Organize, and Elevate Your Productivity</h2>
+                <p>
+                    Welcome to SparkNotes, the ultimate digital companion designed to revolutionize the way you capture, organize, and manage your notes. Whether you're a student, professional, or creative individual, our app empowers you to unlock your true potential for productivity and creativity.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8 col-xxl-7 align-middle d-flex flex-column justify-content-center px-xl-5 m-xxl-5 order-sm-first order-last">
+                <h2>Say Goodbye to Scattered Notes and Disorganized Thoughts</h2>
+                <p>
+                    With SparkNotes, you'll experience a seamless note-taking experience that will elevate your efficiency and help you stay on top of your game.
+                </p>
+            </div>
+            <div class="col-sm-4 order-sm-last order-first">
+                <img src="img/Notes-cuate.png" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="row text-center mt-5 pt-3">
+            <h2 class="pb-5">Seamless Capture of Thoughts</h2>
+            <div class="col-md-4 col-12 px-5 px-md-2 px-xl-5 my-5">
+                <h1><ion-icon name="bulb"></ion-icon></h1>
+                <h4>Capture Ideas, Anytime, Anywhere</h4>
+            </div>
+            <div class="col-md-4 col-12 px-5 px-md-2 px-xl-5 my-5">
+                <h1><ion-icon name="search"></ion-icon></h1>
+                <h4>Stay Organized, Find Anything in an Instant</h4>
+            </div>
+            <div class="col-md-4 col-12 px-5 px-md-2 px-xl-5 my-5">
+                <h1><ion-icon name="sparkles"></ion-icon></h1>
+                <h4>Enhance Your Notes, Unleash Creativity</h4>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="row text-center justify-content-center">
+            <div class="col-sm-5 col-auto">
+                <img src="img/Add notes-cuate.png" class="img-fluid">
+            </div>
+            <h5>Seize the opportunity. Embrace the future of note-taking.</h5>
+            <h2>Sign up to SparkNotes now!</h2>
+            <button class="btn btn-warning w-auto py-2 px-3 py-md-3 px-md-5 m-5" type="button" onclick="location.href='html/account.html#signup'">
+                <h6 class="m-0">Sign up for free</h6>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-5 mt-5">
+        <div class="container text-light text-center">
+            <p class="display-5 mb-4"><ion-icon name="sparkles"></ion-icon>SparkNotes</p>
+            <small class="text-white-50">Work illustrations by Storyset</small><br>
+            <small class="text-white-50">&copy; Copyright by SparkNotes. All rights reserved.</small>
+        </div>
+    </footer>
+
+    
+
+    <!-- Script -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

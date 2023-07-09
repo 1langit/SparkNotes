@@ -1,0 +1,46 @@
+/* ----------------------------- textfield */
+.form-control {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+.form-control:focus {
+    border: none;
+    box-shadow: none;
+}
+
+/* ----------------------------- icon */
+.icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2rem;
+    line-height: 60px;
+}
+
+/* ----------------------------- transition */
+.wrapper {
+    overflow: hidden;
+    width: 420px;
+}
+
+.signup {
+    position: absolute;
+    width: 420px;
+    transform: translateX(400px);
+}
+
+.wrapper .login {
+    transition: transform 0.1s ease;
+    transform: translateX(0) scaleX(1);
+}
+.wrapper.active .login {
+    transform: translateX(-400px) scaleX(0);
+}
+
+.wrapper .signup {
+    transform: translateX(400px) scaleX(0);
+}
+.wrapper.active .signup {
+    transition: transform 0.1s ease;
+    transform: translateX(0) scaleX(1);
+}

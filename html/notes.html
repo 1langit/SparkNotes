@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="../img/sparkles.svg">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <!-- Navigaton -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container px-3">
+            <a class="text-white text-decoration-none fs-4 px-1 pe-4"><ion-icon name="sparkles"></ion-icon>SparkNotes</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+                <div class="navbar-toggler-icon"></div>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav nav nav-underline">
+                    <li class="nav-item px-2">
+                        <a href="home.html" class="nav-link"><ion-icon name="home"></ion-icon> Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="notes.html" class="nav-link"><ion-icon name="document-text"></ion-icon> Notes</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="todo.html" class="nav-link"><ion-icon name="list"></ion-icon> To do</a>
+                    </li>
+                </ul>
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav nav nav-underline ps-2 pt-sm-0 pt-2">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu bg-primary">
+                            <li class="">
+                                <div class="d-flex text-white ps-3"><span class="fs-5"><ion-icon name="checkmark-sharp"></ion-icon></span>&nbsp;<div class="username text-white"></div></div>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="text-white text-decoration-none">Settings</a>
+                            </li>
+                            <hr class="dropdown-divider bg-white">
+                            <li class="dropdown-item">
+                                <a href="../php/account_logout.php" class="text-white text-decoration-none">Log out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-auto vh-100 d-flex flex-column">
+                <h2 class="px-3 pt-4 pb-2">Your notes</h2>
+                <div id="notes-list" class="overflow-scroll vh-100"></div>
+            </div>
+            <div class="col-md-7 col-auto bg-warning-subtle mx-md-0 mx-3 px-md-3 px-5 order-md-last order-first">
+                <form id="note-form" class="vh-100 pb-5 d-flex flex-column">
+                    <input type="text" class="visually-hidden" id="note-id">
+                    <input type="text" class="form-control bg-warning-subtle fs-1 mb-2" id="note-title" spellcheck="false" placeholder="Title" required>
+                    <textarea class="form-control flex-grow-1 bg-warning-subtle" id="note-content" spellcheck="false" placeholder="Type something..." required></textarea>
+                    <div class="d-flex">
+                        <button type="button" class="btn btn-warning mb-4 me-1"><b>B</b></button>
+                        <button type="button" class="btn btn-warning mb-4 me-1"><i>I</i></button>
+                        <button type="button" class="btn btn-warning mb-4 me-1"><u>U</u></button>
+                        <div class="mx-auto"></div>
+                        <button type="submit" class="btn btn-primary mb-4 ms-1"><ion-icon name="save"></ion-icon> Save</button>
+                        <button type="reset" class="btn btn-primary mb-4 ms-1"><ion-icon name="add-circle"></ion-icon> Create new</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid foot bg-dark"></div>
+
+
+
+    <!-- Script -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/get_account.js"></script>
+    <script src="../js/notes.js"></script>
+
+    <!-- Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

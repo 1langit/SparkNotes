@@ -1,0 +1,57 @@
+/* ----------------------------- textfield */
+.form-control {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+.form-control:focus {
+    border: none;
+    box-shadow: none;
+}
+
+textarea {
+    resize: none;
+}
+
+/* ----------------------------- scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #EDECE9;
+}
+::-webkit-scrollbar-thumb {
+    background: #D3D1CB;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #AEACA6;
+}
+
+/* ----------------------------- notes */
+.foot {
+    position: absolute;
+    height: 50px;
+    transform: translateY(-50px);
+}
+
+.note-clamp {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+}
+
+.card:hover {
+    background-color: rgb(240, 240, 240) !important;
+    border: none;
+}
+
+/* ----------------------------- todo */
+#todo-list li:hover {
+    background-color: rgb(255, 211, 80) !important;
+    border: none !important;
+    cursor: grab;
+}
+#todo-list li:active {
+    cursor: grabbing;
+}

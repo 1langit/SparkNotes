@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="../img/sparkles.svg">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <!-- Navigaton -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container px-3">
+            <a href="" class="text-white text-decoration-none fs-4 px-1 pe-4"><ion-icon name="sparkles"></ion-icon>SparkNotes</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+                <div class="navbar-toggler-icon"></div>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav nav nav-underline">
+                    <li class="nav-item px-2">
+                        <a href="home.html" class="nav-link"><ion-icon name="home"></ion-icon> Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="notes.html" class="nav-link"><ion-icon name="document-text"></ion-icon> Notes</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="todo.html" class="nav-link"><ion-icon name="list"></ion-icon> To do</a>
+                    </li>
+                </ul>
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav nav nav-underline ps-2 pt-sm-0 pt-2">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu bg-primary">
+                            <li class="">
+                                <div class="d-flex text-white ps-3"><span class="fs-5"><ion-icon name="checkmark-sharp"></ion-icon></span>&nbsp;<div class="username text-white"></div></div>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="text-white text-decoration-none">Settings</a>
+                            </li>
+                            <hr class="dropdown-divider bg-white">
+                            <li class="dropdown-item">
+                                <a href="../php/account_logout.php" class="text-white text-decoration-none">Log out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Content -->
+    <div class="container p-3">
+        <div class="row">
+            <div class="col-md-5 col-auto p-md-5 p-3">
+                <h2 class="d-flex">Hello,&nbsp;<div class="username"></div>!</h2>
+                <p>Welcome back!</p>
+                <img src="../img/Ordinary day-bro.png" class="img-fluid pt-4">
+            </div>
+            <div class="col-md-6 p-5">
+                <form id="quicknote-form">
+                    <textarea class="form-control bg-warning-subtle rounded p-4" id="note-content" rows="5" spellcheck="false" placeholder="Add quick note..." required></textarea>
+                    <button type="submit" class="btn btn-primary"><ion-icon name="save"></ion-icon> Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- Script -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/get_account.js"></script>
+    <script src="../js/quicknote.js"></script>
+
+    <!-- Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
