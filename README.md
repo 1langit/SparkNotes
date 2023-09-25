@@ -13,13 +13,13 @@ SparkNotes is a web-based note-taking application. The website has a simple and 
 ## Page Capture
 
 ### Landing Page
-![Landing page](capture\LandingPage.png)
+![Landing page](capture/LandingPage.png)
 
 ### About, Feature, Community
-![About, Feature, Community](capture\AboutFeatureCommunity.png)
+![About, Feature, Community](capture/AboutFeatureCommunity.png)
 
 ### Login and Signup Page
-![Login Signup](capture\LoginSignup.png)
+![Login Signup](capture/LoginSignup.png)
 
 ### Home, Notes, Todo
-![Home, Notes, Todo](capture\HomeNotesTodo.png)
+![Home, Notes, Todo](capture/HomeNotesTodo.png)
